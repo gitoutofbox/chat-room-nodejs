@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat test</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="login" id="login">
+            <input id="login_name" placeholder="Username">
+            <input type="password" id="login_pass" placeholder="Password" value="admin">
+            <button onClick="login()">Login</button>
+        </div>
+        
+        <div id="after-login" style="display:none">
+            <h1 id="me"></h1>
+            <div id="user-list" class="user-list"></div>
+        </div>
+    
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="/node_modules/socket.io/client-dist/socket.io.min.js"></script>
+        <script>
+            const socket = io({transports: ['websocket']}); 
+        </script>
+        <script src="js/chat.js"></script>
+    </body>

@@ -1,0 +1,21 @@
+h1,h2,h3{padding:0 0 5px 0; margin:0;}
+#me .me{border-bottom: 1px solid #bbb3b3; padding: 10px 0; margin: 5px 0 15px 0;}
+#me .me img{width:40px; border-radius: 50%; float:left; padding-right: 10px;}
+.user-list{width: 145px; border-right: 0px solid #8a7e7e; float:left;}
+.user-list ul{padding:0; margin:0;}
+.user-list ul li{padding: 5px 0; cursor:pointer; color: blue; list-style-type:none; padding: 10px 0;}
+.chat-window{width:230px; height: 330px; border: 1px solid #ccc; display:inline-block; padding: 5px; position:relative;}
+.chat-window .head {
+    height: 20px; padding: 5px; background:#ddd; margin-bottom: 10px;
+}
+.chat-window .body{height: calc(100% - 20px)}
+.chat-window .body .chat-text{margin-bottom: 10px;}
+.chat-window .body .chat-text.me{text-align: right;}
+.chat-window .body .chat-text.me .userPhoto{float: right;}
+
+.chat-window .body .chat-text .userPhoto{width: 30px; float:left; border-radius:50%; overflow:hidden; position: relative;}
+.chat-window .body .chat-text .userPhoto img{max-width: 100%;}
+
+.chat-window .footer{position: absolute; bottom: 5px; width: calc(100% - 10px); }
+.chat-window .footer button{width: 60px; height:25px;}
+.chat-window .footer input{ width: calc(100% - 70px); height: 20px;}
