@@ -48,6 +48,8 @@ io.on('connection', socket => {
     console.log('conected')
     socket.on('disconnect', () => {
         console.log("disconnected")
+        connectedUsers = connectedUsers.filter(item => item.socketId != socket.id);
+        io.emit('updateUserList', connectedUsers)
     });
 
     socket.on('loggedin', function(user) {
